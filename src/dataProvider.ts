@@ -30,7 +30,6 @@ export const dataProvider: DataProvider = {
     const { field, order } = sort;
     const { page, perPage } = pagination;
     return client
-
       .query({
         query: gql`
               query ($page:Int, $size: Int) {
